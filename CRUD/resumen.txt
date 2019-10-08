@@ -1,0 +1,22 @@
+$sql = "select * from table-name";
+	$resultado = mysql_query($sql);
+
+
+<?php 
+	while ($filas = mysql_fetch_assoc($resultado)) {
+					
+?>
+
+<?php echo $filas['Columna#1'] ?>
+
+<?php } ?>
+
+-------------------------------------------------------
+
+$user = $_GET['txtuser'];
+	$email = $_GET['txtemail'];
+
+	$sql = "insert into table-name(Columana#1,Columna#2)values('".$user."','".$email."')";
+	mysql_query($sql);
+
+-----------------------------------------------------------
